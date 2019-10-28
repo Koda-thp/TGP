@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  
+	<div class="card">
+    <div class="card-header">
+    <h1>Voici la page perso de : <%= @first_name %> <%= @last_name %> </h1>
+    </div>
+        <div class="card-body" > 
+          <img src="http://parkipourlavie.com/wp-content/uploads/2014/03/grinning_happy_dog.jpg" class="rounded float-left rounded" height="150">
+            <h3>Nom : <%= @first_name %> <%= @last_name %></h3>
+            <h5>Description perso : <%= @description %> <br/> 
+            Email : <%= @email %> <br/> 
+            Age : <%= @age %> <br/> 
+            Adresse (ville et zip_code) : <%= @city_name %> <%= @zip_code %></h5> 
+        </div>
+  </div>
+
+</body>
+
+</html>

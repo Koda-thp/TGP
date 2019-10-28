@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+  <div class="card-header">
+    <h1>Bienvenue sur The Gossip Project Website</h1>
+  </div>
+  <h2>Ci-dessous la liste des gossips (autheur et titre): </h2>
+    <div class="card-body"> 
+    	<% Gossip.all.each_with_index do |gossip, index| %>
+        <li class="list-group-item">
+          <p><strong>Auteur : <%= gossip.user.first_name%></strong></p>
+          <p>Titre : <%= gossip.title%></p>
+          <p>Lien du potin : <a class="text-white btn btn-info" href="/gossip/<%= gossip.id %>" role="button" aria-pressed="true">clique ici</a></p>
+        </li>
+      <% end %>
+    </div>
+  </div>
+</body>
+
+</html>
+
